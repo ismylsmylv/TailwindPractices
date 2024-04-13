@@ -1,21 +1,35 @@
+"use client";
 import React from "react";
 import { IoMdContact } from "react-icons/io";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoMdNotifications } from "react-icons/io";
 import { MdAccountCircle } from "react-icons/md";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 type Props = {};
 
 function Navbar({}: Props) {
+  const router = useRouter();
   return (
     <div className="bg-red w-full shadow-md flex place-content-around p-10 items-center	">
       <div className="logo font-Dancing text-5xl font-black cursor-pointer">
         Shoplead
       </div>
       <div className="navs flex  place-content-around items-center	">
-        <div className="nav px-5 capitalize cursor-pointer hover:border-b-4 border-sky-500 ease-in duration-100">
+        <div
+          className="nav px-5 capitalize cursor-pointer hover:border-b-4 border-sky-500 ease-in duration-100"
+          onClick={() => {
+            router.push("home");
+          }}
+        >
           home
         </div>
-        <div className="nav px-5 capitalize cursor-pointer hover:border-b-4 border-sky-500 ease-in duration-100">
+        <div
+          className="nav px-5 capitalize cursor-pointer hover:border-b-4 border-sky-500 ease-in duration-100"
+          onClick={() => {
+            router.push("/shop");
+          }}
+        >
           shop
         </div>
         <div className="nav px-5 capitalize cursor-pointer hover:border-b-4 border-sky-500 ease-in duration-100">
