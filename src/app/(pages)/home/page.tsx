@@ -1,9 +1,14 @@
+import Hero from "@/components/hero/page";
 import React from "react";
 
 type Props = {};
 
 function HomePage({}: Props) {
-  return <div>Home page</div>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
 
 export default HomePage;
