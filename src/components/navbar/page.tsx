@@ -8,25 +8,34 @@ type Props = {};
 function Navbar({}: Props) {
   return (
     <div className="bg-red w-full shadow-md flex place-content-around p-10 items-center	">
-      <div className="logo font-Dancing text-5xl font-black">Shoplead</div>
+      <div className="logo font-Dancing text-5xl font-black cursor-pointer">
+        Shoplead
+      </div>
       <div className="navs flex  place-content-around items-center	">
-        <div className="nav px-5 capitalize">home</div>
-        <div className="nav px-5 capitalize">shop</div>
-        <div className="nav px-5 capitalize">pages</div>
-        <div className="nav px-5 capitalize">blog</div>
-        <div className="nav px-5 capitalize">about</div>
+        <div className="nav px-5 capitalize cursor-pointer hover:border-b-4 border-sky-500 ease-in duration-100">
+          home
+        </div>
+        <div className="nav px-5 capitalize cursor-pointer hover:border-b-4 border-sky-500 ease-in duration-100">
+          shop
+        </div>
+        <div className="nav px-5 capitalize cursor-pointer hover:border-b-4 border-sky-500 ease-in duration-100">
+          pages
+        </div>
+        <div className="nav px-5 capitalize cursor-pointer hover:border-b-4 border-sky-500 ease-in duration-100">
+          blog
+        </div>
+        <div className="nav px-5 capitalize cursor-pointer hover:border-b-4 border-sky-500 ease-in duration-100">
+          about
+        </div>
       </div>
       <div className="icons flex place-content-around items-center	">
-        <div className="icon px-5">
-          <IoMdContact size={25} />
+        <div className="icon mx-5 cursor-pointer  hover:border-4 border-sky-500 ease-in duration-100 rounded-full		">
+          <FaShoppingCart size={23} />
         </div>
-        <div className="icon px-5">
-          <FaShoppingCart size={25} />
-        </div>
-        <div className="icon px-5">
+        <div className="icon mx-5 cursor-pointer hover:border-4 border-sky-500 ease-in duration-100 rounded-full		">
           <IoMdNotifications size={25} />
         </div>
-        <div className="icon px-5">
+        <div className="icon mx-5 cursor-pointer hover:border-4 border-sky-500 ease-in duration-100 rounded-full		">
           <MdAccountCircle size={25} />
         </div>
       </div>
