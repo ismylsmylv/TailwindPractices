@@ -27,7 +27,9 @@ function Hero({}: Props) {
             </div>
           </div>
         </div>
-        <div className="right">sdfsdf</div>
+        <div className="right md:rotate-90 text-4xl font-semibold uppercase w-1/3">
+          trending
+        </div>
       </div>
     </div>
   );
